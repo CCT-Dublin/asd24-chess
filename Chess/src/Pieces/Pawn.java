@@ -4,10 +4,24 @@
  */
 package Pieces;
 
+import chess.Colour;
+
 /**
  *
  * @author celeb
  */
 public class Pawn extends Piece {
+
+    public Pawn(String displayIcon, int rowPosition, int colPosition, Colour playerColour) {
+        super(playerColour, colPosition, rowPosition);
+    }
+    
+    @Override
+    
+//    private String displayIcon;
+//    private int rowPosition;
+//    private int colPosition;
+//    private Colour playerColour;
+    
     
 }
