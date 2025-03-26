@@ -32,10 +32,24 @@ public class Board {
     }
     
     public void displayBoard(Player player) {
-        
+        for(Piece i:grid){
+            grid[i.getRowPosition][i.getColPosition]
+                    
+                    
+        }
+        System.out.println(grid.toString());
     }
     
     public void listPlayerPieces(Player player) {
-        
+        System.out.println(getWhitePieces());
+        System.out.println(getBlackPieces());
+    }
+
+    public List<Piece> getWhitePieces() {
+        return whitePieces;
+    }
+
+    public List<Piece> getBlackPieces() {
+        return blackPieces;//Davidkirbymusician@gmail.com
     }
 }
