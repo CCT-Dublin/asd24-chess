@@ -15,7 +15,7 @@ public class Game {
     private Board board;
     
     public void startGame() {
-        
+        playerTurn = Colour.White;
     }
     
     public void endGame() {
@@ -23,6 +23,15 @@ public class Game {
     }
     
     public void nextTurn() {
-        
+        switch (playerTurn) {
+            case White: {
+                playerTurn = Colour.Black;
+                break;
+            }
+            case Black: {
+                playerTurn = Colour.White;
+                break;
+            }
+        }
     }
 }
