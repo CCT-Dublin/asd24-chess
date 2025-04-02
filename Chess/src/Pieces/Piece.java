@@ -14,8 +14,8 @@ import java.util.List;
  */
 public abstract class Piece {
     private String displayIcon;
-    private int rowPosition;
-    private int colPosition;
+    protected int rowPosition;
+    protected int colPosition;
     private Colour playerColour;
     
 public Piece(String displayIcon, int rowPosition, int colPosition, Colour playerColour){
