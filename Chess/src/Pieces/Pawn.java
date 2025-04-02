@@ -25,6 +25,5 @@ public class Pawn extends Piece {
 //    private int rowPosition;
 //    private int colPosition;
 //    private Colour playerColour;
-    
-    
+    }
 }
