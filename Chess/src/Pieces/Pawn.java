@@ -4,7 +4,10 @@
  */
 package Pieces;
 
+import chess.Board;
 import chess.Colour;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  *
@@ -13,11 +16,11 @@ import chess.Colour;
 public class Pawn extends Piece {
 
     public Pawn(String displayIcon, int rowPosition, int colPosition, Colour playerColour) {
-        super(playerColour, colPosition, rowPosition);
+        super(displayIcon, colPosition, rowPosition, playerColour);
     }
     
     @Override
-    
+    public List<int[]> getAndDisplayValidMoves(Board board) { /*...*/ return new ArrayList<>();
 //    private String displayIcon;
 //    private int rowPosition;
 //    private int colPosition;
