@@ -14,7 +14,7 @@ public class Game {
     private Colour playerTurn;
     private Board board;
     
-    public void Game (Player whitePlayer, Player blackPlayer) {
+    public Game(Player whitePlayer, Player blackPlayer) {
         this.playerTurn = Colour.White;
         this.whitePlayer.setName(whitePlayer.getName());
         this.blackPlayer.setName(blackPlayer.getName());
@@ -22,11 +22,13 @@ public class Game {
     
     public void startGame() {
         // Initializing board
+        playerTurn = Colour.White;
         Board.initializeBoard();
         Board.displayBoard(whitePlayer);
         
         nextTurn();
 
+       
     }
     
     public void endGame() {
@@ -47,11 +49,13 @@ public class Game {
             case White: {
                 playerTurn = Colour.Black;
                 Board.displayBoard(blackPlayer);
+                break;
             }
             
             case Black: {
                 playerTurn = Colour.White;
                 Board.displayBoard(whitePlayer);
+                break;
             }
         }
     }
